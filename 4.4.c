@@ -1,18 +1,10 @@
-<<<<<<< HEAD
 #include <netdb.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
-=======
-#include <stdio.h>
-#include <netdb.h>
 #include <netinet/in.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/socket.h>
 #include <sys/types.h>
->>>>>>> 630bf8670281263bfb41e5bec7b9bc948602c33c
 #include <arpa/inet.h>
 #include <unistd.h>
 #define MAX 80
@@ -22,7 +14,7 @@ void func(int sockfd)
 {
     char buff[MAX];
     int n;
-<<<<<<< HEAD
+
     for (;;)
     {
         bzero(buff, sizeof(buff));
@@ -77,9 +69,6 @@ int main ()
   close(sockfd);
 
 }
-
-
-=======
 
     for (;;)
     {
@@ -157,5 +146,4 @@ int main()
 
     close(sockfd);
 }
->>>>>>> 630bf8670281263bfb41e5bec7b9bc948602c33c
 
